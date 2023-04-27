@@ -381,7 +381,7 @@ end
     =================================
     - Will throw an error if outdated
 ]]
-local CurrentVersion = '0.0.1'
+local CurrentVersion = '0.0.2'
 local GithubResourceName = 'fivem2discord'
 
 PerformHttpRequest('https://raw.githubusercontent.com/NARC-FiveM/Versions/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
@@ -392,14 +392,17 @@ PerformHttpRequest('https://raw.githubusercontent.com/NARC-FiveM/Versions/master
         print('Version Check for: ' .. GetCurrentResourceName())
         print('##############')
         print('Current Version: ' .. CurrentVersion)
-        print('Newest Version' .. NewestVersion)
+        print('Newest Version: ' .. NewestVersion)
         print('##############')
-        if CurrentVersion ~= NewestVersion then
-            print('Error: You are using an outdated version')
-            print('Please check our github for the newest release')
+        if CurrentVersion == NewestVersion then
+            print('Success: You are up to date and good to go')
             print('##############')
         else
-            print('Success: You are up to date and good to go')
+            print('Error: You are using an outdated version')
+            print('Please check our github for the newest release')
+            print('Github: https://github.com/NARC-FiveM/Resources/discord-logs')
+            print('##############')
+            print('Change Log: \n' .. Changes)
             print('##############')
         end
 
