@@ -4,29 +4,3 @@
 > This system is designed to be one universal method of creating and using simple interaction commands, and to replace old and copy-pasted methods released in the past.
 
 > It provides server owners with a simple way of installing and configuring their commands.
-
----
-
-## Features
-* Framework compatiblity (vRP & ESX)
-* Automatic name formatting based on server frameworks
-* Easy configuration
-* Simple drag-and-drop installation
-* Universal bridge between chat commands and frameworks
-* Potentially powerful API, yet also simple to use.
-
----
-
-## Documentation
-- [Information](https://help.toxicdev.me/internal/commands-system/)
-- [Installation](https://help.toxicdev.me/internal/commands-system/install)
-- [Settings](https://help.toxicdev.me/internal/commands-system/settings)
-- [Updates](https://help.toxicdev.me/internal/commands-system/updates)
-- [Command Packs](https://help.toxicdev.me/examples/command-packs/)
-- [Example Command Pack](https://help.toxicdev.me/internal/commands-system/example-pack/)
-- [Creating a Command Pack](https://help.toxicdev.me/internal/commands-system/create-pack/)
-
----
-
-## Support
-- [Discord](https://narc.live/join)
