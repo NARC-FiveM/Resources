@@ -1,5 +1,5 @@
 # Resources
-Our publicly available resources which should be used by all NARC Members.
+Our publicly available resources.
 
 ---
 
