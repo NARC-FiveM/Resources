@@ -386,17 +386,31 @@ local GithubResourceName = 'fivem2discord'
 
 PerformHttpRequest('https://raw.githubusercontent.com/NARC-FiveM/Versions/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
     PerformHttpRequest('https://raw.githubusercontent.com/NARC-FiveM/Versions/master/' .. GithubResourceName .. '/CHANGES', function(Error, Changes, Header)
+
+        print('\n')
         print('##############')
         print('Version Check for: ' .. GetCurrentResourceName())
         print('##############')
         print('Current Version: ' .. CurrentVersion)
         print('Newest Version: ' .. NewestVersion)
         print('##############')
-        print('Note: You should keep your versions matching for latest features')
-        print('Please check our github for the newest release when necessary')
-        print('Github Link: https://github.com/NARC-FiveM/Resources/discord-logs')
-        print('##############')
-        print('Change Log: \n' .. Changes)
-        print('##############')
+        if (tonumber(CurrentVersion) < tonumber(NewestVersion)) then
+            print('Error: You are using an outdated version')
+            print('Please check our github for the newest release')
+            print('Github: https://github.com/NARC-FiveM/Resources/discord-logs')
+            print('##############')
+            print('Change Log: \n' .. Changes)
+            print('##############')
+        elseif (tonumber(CurrentVersion) > tonumber(NewestVersion)) then
+            print('Error: Are you living in the future?')
+            print('- You are using a non-existent verison')
+            print('- Please downgrade to latest to remove this error')
+            print('##############')
+        else
+            print('Success: You are up to date and good to go')
+            print('##############')
+        end
+
+        print('\n')
     end)
 end)
