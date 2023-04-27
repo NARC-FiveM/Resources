@@ -406,13 +406,3 @@ PerformHttpRequest('https://raw.githubusercontent.com/NARC-FiveM/Versions/master
         print('\n')
     end)
 end)
-
-
-
-
-
-
-
-
-
-
