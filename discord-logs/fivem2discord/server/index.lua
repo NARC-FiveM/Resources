@@ -381,7 +381,7 @@ end
     =================================
     - Will throw an error if outdated
 ]]
-local CurrentVersion = '0.0.2'
+local CurrentVersion = '002'
 local GithubResourceName = 'fivem2discord'
 
 PerformHttpRequest('https://raw.githubusercontent.com/NARC-FiveM/Versions/master/' .. GithubResourceName .. '/VERSION', function(Error, NewestVersion, Header)
@@ -394,7 +394,7 @@ PerformHttpRequest('https://raw.githubusercontent.com/NARC-FiveM/Versions/master
         print('Current Version: ' .. CurrentVersion)
         print('Newest Version: ' .. NewestVersion)
         print('##############')
-        if CurrentVersion == NewestVersion then
+        if (CurrentVersion ~= NewestVersion) then
             print('Success: You are up to date and good to go')
             print('##############')
         else
