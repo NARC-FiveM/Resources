@@ -28,11 +28,11 @@ Citizen.CreateThread(function()
 			
 			if (Killer == PlayerId()) then
 
-                DeathReason = 'committed suicide'
+                DeathReason = 'took the cowards way out and commited suicide'
 
             elseif (Killer == nil) then
 
-                DeathReason = 'died'
+                DeathReason = 'died of unknown causes or was killed by an admin'
 			else
 
                 if IsMelee(DeathCauseHash) then
@@ -98,7 +98,7 @@ Citizen.CreateThread(function()
 			end
 			
 
-            if DeathReason == 'committed suicide' or DeathReason == 'died' then
+            if DeathReason == 'took the cowards way out and commited suicide' or DeathReason == 'died of unknown causes or was killed by an admin' then
 
                 TriggerServerEvent('FiveM2Discord:playerDied', GetPlayerName(PlayerId()) .. ' ' .. DeathReason .. '.', Weapon)
 
