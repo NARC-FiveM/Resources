@@ -16,7 +16,7 @@ CONFIGURATION = {
     System = {
         SystemAvatar = 'https://wiki.fivem.net/w/images/d/db/FiveM-Wiki.png', -- Change this to a link of your choice!
         UserAvatar = 'https://i.imgur.com/KIcqSYs.png', -- Change this to a link of your choice!
-        SystemName = 'IMAGE_LINK_HERE' -- Change this to a name of your choice!
+        SystemName = 'SYSTEM' -- Change this to a name of your choice!
     },
     --[[
         Special Command Formating:
