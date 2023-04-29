@@ -1,4 +1,4 @@
 # Resources
-Our publicly available resources.
+Our publicly available visual and soundfx resources.
 
 ---
